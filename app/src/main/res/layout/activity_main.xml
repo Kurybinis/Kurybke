@@ -7,13 +7,25 @@
         android:layout_height="match_parent"
         tools:context=".MainActivity"
         android:background="@color/dark"
-        android:orientation="horizontal">
+        android:orientation="vertical">
 
 
     <include
             android:id="@+id/app_bar"
             layout="@layout/app_bar">
     </include>
+
+    <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dar neatlikta"
+            android:textColor="@color/white"/>
+
+    <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="#FFFFFF" />
 
 
 </LinearLayout>

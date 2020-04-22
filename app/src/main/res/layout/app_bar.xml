@@ -11,7 +11,8 @@
             android:id="@+id/pavadinimas"
             android:text="@string/app_name"
             android:textSize="70px"
-            android:textColor="@color/purpulish">
+            android:textColor="@color/purpulish"
+            >
     </TextView>
 
 </android.support.v7.widget.Toolbar>

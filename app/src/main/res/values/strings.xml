@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Pagalbininkas</string>
+    <string name="uzd">Užduotis</string>
+    <string name="atlikta">Atlikta</string>
+    <string name="pradeta">Pradėta</string>
+    <string name="iki">Atlikti iki</string>
 </resources>

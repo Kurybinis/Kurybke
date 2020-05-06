@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/side_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@color/dark"
+        android:visibility="visible"
+        android:orientation="horizontal"
+        android:layout_gravity="start">
+
+
+<android.support.design.widget.NavigationView
+            android:layout_width="245dp"
+            android:layout_height="match_parent"
+            android:visibility="visible"
+            tools:layout_editor_absoluteX="1dp"
+            tools:layout_editor_absoluteY="1dp"
+            android:background="#1AFFFFFF"
+            android:layout_gravity="start">
+
+        <TextView
+                android:id="@+id/pavadinimas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="4dp"
+                android:text="@string/app_name"
+                android:textColor="@color/purpulish"
+                android:textSize="70px">
+
+        </TextView>
+        <Button
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/ic_arrow_back"
+
+
+        <ListView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:background="@color/white_16proc"
+                >
+
+        </ListView>
+    </android.support.design.widget.NavigationView>
+</android.support.v7.widget.LinearLayoutCompat>

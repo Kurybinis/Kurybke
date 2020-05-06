@@ -1,25 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:background="@color/dark"
-        android:orientation="vertical"
+        android:orientation="horizontal"
         tools:context=".MainActivity">
 
+    <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/dark"
+            android:orientation="vertical"
+            app:layout_constraintStart_toStartOf="parent">
+
+        <include
+                android:id="@+id/app_bar"
+                layout="@layout/app_bar">
+
+        </include>
+
+        <include
+                android:id="@+id/listview"
+                layout="@layout/listview">
+
+        </include>
+
+    </LinearLayout>
+
     <include
-            android:id="@+id/app_bar"
-            layout="@layout/app_bar">
+            android:id="@+id/side_menu"
+            layout="@layout/side_menu"
+            android:gravity="start">
 
     </include>
 
-    <include
-            android:id="@+id/listview"
-            layout="@layout/listview">
-
-    </include>
-
-</LinearLayout>
+</android.support.constraint.ConstraintLayout>
 
 

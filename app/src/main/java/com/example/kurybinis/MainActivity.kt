@@ -4,6 +4,7 @@ import android.content.Context
 import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.os.PersistableBundle
 import android.support.annotation.BinderThread
 import android.support.design.widget.NavigationView
 import android.support.v4.widget.DrawerLayout
@@ -27,18 +28,7 @@ class MainActivity : AppCompatActivity() {
         }
         }
 
-    override fun onCreateContextMenu(
-        menu: ContextMenu?,
-        v: View?,
-        menuInfo: ContextMenu.ContextMenuInfo?
-    ) {
-        super.onCreateContextMenu(menu, v, menuInfo)
-        setContentView(R.layout.activity_main)
 
-        open.setOnClickListener {
-            openContextMenu(side_menu)
-        }
-    }
 
     }
 

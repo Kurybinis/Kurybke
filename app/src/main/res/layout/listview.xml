@@ -12,7 +12,7 @@
             android:layout_height="wrap_content"
             android:background="#1AFFFFFF"
             android:buttonTint="@color/purpulish"
-            android:text="title"
+            android:text="@string/uzd"
             android:textColor="#FFFFFF"
             android:textSize="18sp" >
 

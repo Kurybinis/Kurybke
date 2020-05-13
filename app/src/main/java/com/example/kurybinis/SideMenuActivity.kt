@@ -1,25 +1,35 @@
 package com.example.kurybinis
 
+import android.content.Intent
 import android.os.Bundle
-import android.os.PersistableBundle
 import android.support.v7.app.AppCompatActivity
 import android.widget.Button
-import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.side_menu.*
+import kotlinx.android.synthetic.main.side_menu_list.*
 
 class SideMenuActivity: AppCompatActivity() {
-    val language = arrayOf<String>()
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        val langua = arrayOf("gerti vandeni","valgyti")
+
         super.onCreate(savedInstanceState)
         setContentView(R.layout.side_menu)
 
        val backBtn = findViewById<Button>(R.id.back)
         backBtn.setOnClickListener {
-            finish();
+            finish()
         }
-        val listAdapter = ListAdapter(this,language)
-        tasklist.adapter = listAdapter
+
+        val list = SideMenuList(this, langua)
+        sidelist.adapter = list
+
+        sidemenulist.setOnClickListener {
+            startActivity(Intent(this, TaskActivity::class.java))
+        }
+
 
     }
+
+
 }

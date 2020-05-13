@@ -1,6 +1,5 @@
 package com.example.kurybinis
 
-import android.annotation.SuppressLint
 import android.widget.ArrayAdapter
 import android.widget.CheckBox
 import android.app.Activity

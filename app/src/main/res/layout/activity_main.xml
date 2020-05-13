@@ -25,11 +25,13 @@
 
         </include>
 
-        <include
-                android:id="@+id/listview"
-                layout="@layout/listview">
-
-        </include>
+        <ListView
+                android:id="@+id/tasklist"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:layout_gravity="center_horizontal">
+        </ListView>
 
     </LinearLayout>
 

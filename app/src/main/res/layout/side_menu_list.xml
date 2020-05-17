@@ -5,14 +5,15 @@
         android:layout_width="245dp"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
+
     <Button
+            android:id="@+id/sidemenulist"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="#1AFFFFFF"
             android:text="@string/uzd"
-            android:background="@color/white_16proc"
             android:textColor="@color/white"
-            android:id="@+id/sidemenulist"
-            android:textSize="18sp" >
+            android:textSize="18sp">
 
     </Button>
 

@@ -17,5 +17,9 @@ class ListAdapter(private val context: Activity, private val title: Array<String
 
         titleText.text = title[position]
         return rowView
+
+
     }
+
+
 }

@@ -20,6 +20,9 @@ class MainActivity : AppCompatActivity() {
 
         val ListAdapter = ListAdapter(this,language)
         tasklist.adapter = ListAdapter
+
+
+
         }
 
 

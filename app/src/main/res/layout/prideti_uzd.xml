@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+        <TableLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/dark"
+            android:orientation="vertical"
+            app:layout_constraintStart_toStartOf="parent">
+
+
+
+    <include
+            android:id="@+id/app_bar"
+            layout="@layout/app_bar">
+
+    </include>
+    <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="50dp">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Įveskite užduotį"
+                android:layout_marginStart="18dp"
+                android:textColor="@color/white"
+                android:textSize="25sp">
+
+        </TextView>
+    </TableRow>
+    <TableRow>
+
+        <EditText
+                android:id="@+id/editText"
+                android:layout_width="wrap_content"
+                android:layout_height="43dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="0dp"
+                android:background="@color/white_16proc"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toStartOf="@+id/addButton"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+    </TableRow>
+
+
+    <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:layout_marginBottom="18dp">
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pradeta"
+                    android:layout_marginStart="15dp"
+                    android:textColor="@color/white"
+                    android:textSize="25sp">
+
+            </TextView>
+
+            <EditText
+                    android:id="@+id/pradeta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="43dp"
+                    android:layout_marginStart="56dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    app:layout_constraintEnd_toStartOf="@+id/addButton"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:textColor="@color/white"
+                    android:background="@color/white_16proc"/>
+        </LinearLayout>
+    </TableRow>
+    <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="99dp">
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:text="@string/iki"
+                    android:textColor="@color/white"
+                    android:textSize="25sp">
+
+            </TextView>
+
+            <EditText
+                    android:id="@+id/iki"
+                    android:layout_width="wrap_content"
+                    android:layout_height="43dp"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="5dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    app:layout_constraintEnd_toStartOf="@+id/addButton"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:textColor="@color/white"
+                    android:background="@color/white_16proc"/>
+        </LinearLayout>
+    </TableRow>
+    <TableRow>
+
+        <Button
+                android:id="@+id/addButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginStart="25dp"
+                android:textColor="@color/white"
+                android:text="Pridėti užduotį"
+                android:background="@color/done"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+    </TableRow>
+</TableLayout>
